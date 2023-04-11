@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Task task="Task Comp" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Task from '../components/Task.vue'
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    Task
   }
 }
 </script>
+
+<style scoped>
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+</style>
